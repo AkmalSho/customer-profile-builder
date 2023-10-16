@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Profile Builder</h1>
+    </header>
+
+    <section id="customerType">
+        <h2>Select Customer Type</h2>
+        <button onclick="selectType('B2C')">B2C</button>
+        <button onclick="selectType('B2B')">B2B</button>
+    </section>
+
+    <section id="dataEntry" style="display: none;">
+        <h2>Data Entry</h2>
+        <form id="dataForm">
+            <!-- Fields will populate here based on the customer type -->
+        </form>
+    </section>
+
+    <footer>
+        <button onclick="submitData()">Submit</button>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
